@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyCon</title>
 </head>
+<style>
+    bo
+    .btnup{
+        padding-left: 200px;
+    }
+    .btnbottom{
+        padding-left: 150px;
+    }
+    .bottom{
+        padding-left: 200px;
+    }
+    .right{
+        padding-left: 50px;
+    }
+    .p{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+</style>
 <body>
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
@@ -43,5 +63,34 @@
     <!--  -->
     <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
     <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
+    <h1 id="displayText">Press A Button</h1>
+    
+    <div class="container">
+        <div class="btnup">
+            <button id="distext" onclick="displayText()">Up</button>
+        </div>
+        <div class="btnbottom">
+            <button id="left" onclick="displayText()">Left</button>
+
+                <button id="right" onclick="displayText()">Right</button>    
+                <button id="down" onclick="displayText()">Down</button>
+
+        </div>
+        <div class="act-btn">
+            <button>B</button>
+            <button>A</button>
+        </div>    
+    </div>
+     </div>
+    </div>
+     <div class="container">
+        <p>NPM: 21430090 <br> Nama: Egideo Theofano <br> github.com/klenadir</p>
+     </div>
 </body>
+<script>
+    const distext = document.getElementById('distext');
+    distext.addEventListener('click', function() {
+        document.getElementById('displayText').innerText ="you press a button"})
+    
+</script>
 </html>
